@@ -9,3 +9,29 @@
 // export const App=()=>{
 //   return React.createElement("h1",null,"welcome to react shrabani");
 // }
+export const App = () => {
+  return (
+    <>
+    <NetflisSeries/>
+    <NetflisSeries/>
+    <NetflisSeries/>
+    <NetflisSeries/>
+    <NetflisSeries/>
+   
+    </>
+  );
+};
+const NetflisSeries = ()=>{
+  return(
+    <>
+    <div>
+    <div>
+      <img src="tears.jpg" alt="Queen of Tears" width="40%" height="40%" />
+    </div>
+      <h1>Name: Queen of Tears</h1>
+      <h3>Rating: 4.5</h3>
+      <p>Summary:Queen of Tears takes viewers on an hi journey of love, loss, and redemption. Follow Hae-in and Hyun-woo as they navigate societal expectations and personal trials.</p>
+   </div>
+    </>
+  )
+}
