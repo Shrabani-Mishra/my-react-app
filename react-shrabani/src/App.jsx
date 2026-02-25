@@ -30,6 +30,16 @@ const NetflisSeries = ()=>{
     const genre="Romcom";
     return genre;
   }
+  //process3:
+  // let age=20;
+  // let canWatch="not visible";
+  // if(age>=18)canWatch="Watch Now"
+  // process4:
+  let age=18
+  const canWatch=()=>{
+    if(age>=18)return"Watch Now";
+    return"Not Available";
+  }
   return(
     <>
     <div>
@@ -42,6 +52,12 @@ const NetflisSeries = ()=>{
       <h3>Rating: {3+3.5}</h3>
       <p>Summary:{summary}</p>
       <p>Genre:{returnGenre()}</p>
+      <button>
+       {/* watch now */}
+       {/* {age>=18?"Watch Now" :"Not Available"} */}
+       {/* {canWatch} */}
+       {canWatch()}
+      </button>
    </div>
     </>
   )
