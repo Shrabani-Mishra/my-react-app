@@ -26,6 +26,10 @@ const NetflisSeries = ()=>{
   const name="Name: Queen of Tears";
   const rating="8.2";
   const summary="Queen of Tears takes viewers on an hi journey of love, loss, and redemption. Follow Hae-in and Hyun-woo as they navigate societal expectations and personal trials.";
+  const returnGenre=()=>{
+    const genre="Romcom";
+    return genre;
+  }
   return(
     <>
     <div>
@@ -37,6 +41,7 @@ const NetflisSeries = ()=>{
       {/* using expression */}
       <h3>Rating: {3+3.5}</h3>
       <p>Summary:{summary}</p>
+      <p>Genre:{returnGenre()}</p>
    </div>
     </>
   )
