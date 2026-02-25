@@ -1,4 +1,4 @@
-// import React from "react"
+// import React from "react";
 
 // export const App=()=>{
 //   return(
@@ -22,15 +22,21 @@ export const App = () => {
   );
 };
 const NetflisSeries = ()=>{
+  //Dynamic value using variable:
+  const name="Name: Queen of Tears";
+  const rating="8.2";
+  const summary="Queen of Tears takes viewers on an hi journey of love, loss, and redemption. Follow Hae-in and Hyun-woo as they navigate societal expectations and personal trials.";
   return(
     <>
     <div>
     <div>
       <img src="tears.jpg" alt="Queen of Tears" width="40%" height="40%" />
     </div>
-      <h1>Name: Queen of Tears</h1>
-      <h3>Rating: 4.5</h3>
-      <p>Summary:Queen of Tears takes viewers on an hi journey of love, loss, and redemption. Follow Hae-in and Hyun-woo as they navigate societal expectations and personal trials.</p>
+      <h1>Name:{name}</h1>
+      <h3>Rating: {rating}</h3>
+      {/* using expression */}
+      <h3>Rating: {3+3.5}</h3>
+      <p>Summary:{summary}</p>
    </div>
     </>
   )
